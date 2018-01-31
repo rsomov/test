@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/testapp
+      uri: mongodb://testuser:testuser@ds119258.mlab.com:19258/tst
 
 logging:
   level:
