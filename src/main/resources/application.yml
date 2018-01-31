@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://testuser:testuser@ds119258.mlab.com:19258/tst
+      uri: mongodb://${DB_USER}:${DB_PASS}@ds119258.mlab.com:19258/tst
 
 logging:
   level:
