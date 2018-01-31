@@ -7,7 +7,6 @@ import org.springframework.web.reactive.function.server.RequestPredicates;
 import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
-import reactor.core.publisher.Mono;
 
 import java.util.Date;
 
@@ -29,7 +28,7 @@ public class RoutesConfig {
     private RouterFunction<ServerResponse> apiRouter() {
         return RouterFunctions
                 .nest(RequestPredicates.path("/users"), usersRouter())
-                .andRoute(RequestPredicates.GET("/ping"), req -> ServerResponse.ok().body(Mono.just(new Date().toString()), String.class));
+                .andRoute(RequestPredicates.GET("/ping"), req -> ServerResponse.ok().syncBody(new Date().toString()));
     }
 
     private RouterFunction<ServerResponse> usersRouter() {
