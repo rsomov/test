@@ -1,0 +1,2 @@
+db.user.insert({"_id": "test-admin", "name": "admin", "surname": "test", "email": "test-admin@rosman.ee", "active": true, "roles": ["ADMIN", "MANAGER", "USER"], "password": "$2a$12$CAKLYQTYPLrO2PUd9ONLlOAv.ewDWOd7fd2khnvCtkjo9fN83DJHG", "_class": "ee.rosman.github.test.model.User"});
+db.user.insert({"_id": "test-user", "name": "user", "surname": "test", "email": "test-user@rosman.ee", "active": true, "roles": ["USER"], "password": "$2a$12$3DosoUMbbcZeV3rrFFoCgO9rlA7O7zVmAs48gcLVK13xkTs1G7oqq", "_class": "ee.rosman.github.test.model.User"});

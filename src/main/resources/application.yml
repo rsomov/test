@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/testapp
+
+logging:
+  level:
+    org.springframework.web: WARN
+    reactor: WARN
